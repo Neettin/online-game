@@ -9,11 +9,13 @@
 
 .box{
 
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   border: 1px solid black;
   background-color: grey;
   display:flex;
+  flex-direction: column;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 
@@ -28,7 +30,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px; 
-  border-radius: 5px;
+  border-radius: 15px;
   
   
 
@@ -61,4 +63,87 @@
   font-size: 40px;
   color: black;
 
+}
+.hands{
+  background-image: url("..//assets/triangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  width:478px;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+.hands img{
+  cursor: pointer;
+  margin:8px;
+  transition:all 0.5s;
+}
+.hands img:hover{
+  transform: translate3d(0px,-7px,0px);
+ 
+}
+.result_board{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+
+}
+
+.human_choice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+.human_choice p{
+  font-size: 25px;
+  font-weight: bolder;
+  color: azure;    
+  text-transform: uppercase;
+}
+.result{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+.result p{
+  font-size: 35px;
+  color: azure;
+  font-weight: bolder;
+}
+.computer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+.computer p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: azure;    
+    text-transform: uppercase;
+}
+.result .btn{
+  background-color:whitesmoke;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.10s;
+}
+
+.result .btn:hover{
+  background-color: green;
+  transform: translate3d(0,-8px,0);
 }

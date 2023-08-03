@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>online game</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box">
-        <div class="scoreboard">
-            <div class="logo">
-                <img src="assets/title.png" alt="">
-            </div>
-            <div class="score">
-            <h1>Score</h1>
-            <p>0</p>
+      <div class="scoreboard">
+        <div class="logo">
+          <img src="assets/title.png" alt="online game logo" />
         </div>
+        <!-- <div id = "score"class="score">
+          <h1>Score</h1>
+          <p id="score">0</p>
+        </div> -->
+      </div>
+      <div  id="hands" class="hands">
+        <div class="rock">
+          <img src="assets/Rock.png" alt="rock" onclick="human_choice('rock')"/>
         </div>
+        <div class="paper">
+          <img src="assets/Paper.png" alt="paper" onclick="human_choice('paper')" />
+        </div>
+        <div class="scissor">
+          <img src="assets/Scissors.png" alt="scissor" onclick="human_choice('scissor')" />
+        </div>
+      </div>
+      <div id ="result_board"class="result_board">
+        <div class="human_choice">
+            <p>
+                You picked
+            </p>
+            <img src="assets/Scissors.png" id="human_choice" alt="human_choice">
+        </div>
+        <div class="result">
+            <p id="decision">YOU LOSE!</p>
+        
+            <!-- <button class="btn" onclick="reset()">Play Again</button> -->
+        </div>
+        <div class="computer">
+            <p>Computer Picked</p>
+            <img src="assets/Rock.png" id="computer_choice" alt="bot_choice">
+        </div>
+
+      </div>
     </div>
-    
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
